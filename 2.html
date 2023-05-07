@@ -1,57 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+<meta charset="utf-8">
 
-        // var n = 0;
-        // while (n < 10){
-        //     n += 1
-        //     alert (n)
-        // }
-        var n = parseInt(prompt('Еще по одной?'))
-        while (n != 1){
-            alert('Введите "1" для выхода')
-            n = prompt('Еще по одной?')
-        };
+<script>
+// Task 1
 
-        function factorial(n){
-            var result = 1;
-            while(n != 0){
-                n *= n--;
-            }
-            return n;
-        }
-        var n = parseInt(prompt("Ведите число: "))
-        fact = 1
-        while (n > 1){
-            fact *= n
-            n -= 1
-        }
-        alert('Факториал: ' + fact)
+/*
+    var number = parseInt(prompt("Enter a number: "));
+    alert("Your number is: " + number)
+*/
 
-        function checkPalindrom (str) {
-            return str == str.split('').reverse().join('')
-        }
+// Task 2
 
-        var last_name = prompt('Введите фамилию для проверки на палиндром: ')
-        // document.write(checkPalindrom(last_name))
-        alert(checkPalindrom(last_name))
+/*
+    var x = parseInt(prompt("Enter first number: "));
+    var y = parseInt(prompt("Enter second number: "));
+    var z = prompt("type plus to sum ; type minus to subtract ; type multiply to multiply ; type divide to divide ");
+    var result;
 
-        for (var i = 1; i <= 10; i++) {
-            var count = 0
-            for (var j = 1; j <= i; j++) { 
-                if (i % j == 0){count++}
-            }
-            // alert(count)
-            if (count <= 2){alert(i)}
-            // alert('Простые числа ' + i)
-        }
+    switch(z) {
+      case 'sum':
+    result = x + y;
+    break;
+
+      case 'subtract':
+    result = x - y;
+    break;
+
+      case 'multiply':
+    result = x * y;
+    break;
+
+      case 'divide':
+    result = x / y;
+    };
+
+    alert("The result is: " + result);
+*/
+
+// Task 3
+
+/*
+    alert("Think of a number")
+    var a = parseInt(prompt());
+    var result = a * 2 + 7
+    alert("Your number is: " + result)
+*/
+
+// Task 4
+
+/*
+    var a = prompt("Enter your name: ")
+    var b = prompt("Enter your year of birth: ")
+    var result = 2023 - b
+    document.write(a + ": " + result)
+    alert(typeof(result))
+*/
+
     </script>
-</body>
-</html>
